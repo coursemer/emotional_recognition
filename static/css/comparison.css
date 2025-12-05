@@ -1,0 +1,82 @@
+/* ===== EMOTION COMPARISON ===== */
+.emotion-comparison {
+    background: var(--white);
+    border-radius: 25px;
+    padding: 2rem;
+    box-shadow: var(--shadow-soft);
+    transition: all 0.3s ease;
+    animation: scaleIn 0.5s ease 0.2s both;
+}
+
+.emotion-comparison:hover {
+    box-shadow: var(--shadow-medium);
+    transform: translateY(-3px);
+}
+
+.emotion-comparison h3 {
+    font-family: var(--font-secondary);
+    font-size: 1.5rem;
+    color: var(--primary-pink);
+    margin-bottom: 1.5rem;
+}
+
+.comparison-bars {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.comparison-bar-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.75rem;
+    border-radius: 15px;
+    background: var(--light-pink);
+    transition: all 0.3s ease;
+}
+
+.comparison-bar-container.active {
+    background: var(--gradient-soft);
+    box-shadow: var(--shadow-soft);
+    transform: scale(1.02);
+}
+
+.comparison-label {
+    min-width: 140px;
+    font-weight: 600;
+    color: var(--text-dark);
+    font-size: 0.95rem;
+}
+
+.comparison-bar-wrapper {
+    flex: 1;
+    position: relative;
+    height: 25px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.comparison-bar {
+    height: 100%;
+    background: var(--gradient-primary);
+    border-radius: 12px;
+    transition: width 0.5s ease;
+    box-shadow: 0 0 10px rgba(255, 105, 180, 0.3);
+}
+
+.comparison-bar-container.active .comparison-bar {
+    background: linear-gradient(135deg, #FF69B4 0%, #FF1493 100%);
+    box-shadow: 0 0 15px rgba(255, 20, 147, 0.5);
+}
+
+.comparison-value {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text-dark);
+}

@@ -7,6 +7,8 @@ Une application de reconnaissance d'émotions en temps réel qui utilise votre w
 - [Prérequis](#prérequis)
 - [Installation Étape par Étape](#installation-étape-par-étape)
 - [Comment Lancer l'Application](#comment-lancer-lapplication)
+  - [Version Web (Flask) - Recommandée ✨](#version-web-flask---recommandée-)
+  - [Version Desktop (OpenCV)](#version-desktop-opencv)
 - [Comment Utiliser l'Application](#comment-utiliser-lapplication)
 - [Résolution des Problèmes](#résolution-des-problèmes)
 - [Technologies Utilisées](#technologies-utilisées)
@@ -167,43 +169,98 @@ Successfully installed ...
 
 ## Comment Lancer l'Application 🎬
 
-### Étape 1 : Assurez-vous que l'Environnement Virtuel est Activé
+Cette application est disponible en **deux versions** :
+1. **Version Web (Flask)** - Interface moderne dans votre navigateur ✨ **RECOMMANDÉE**
+2. **Version Desktop (OpenCV)** - Fenêtre traditionnelle
+
+### Version Web (Flask) - Recommandée ✨
+
+#### Étape 1 : Assurez-vous que l'Environnement Virtuel est Activé
 
 Vous devez voir `(venv)` au début de votre ligne de commande.
 
 **Si vous ne le voyez pas**, retournez à l'Étape 6 de l'installation.
 
-### Étape 2 : Lancer le Programme
+#### Étape 2 : Lancer le Serveur Flask
 
 ```bash
-python main.py
+python app.py
 ```
 
 **Sur certains systèmes, vous devrez peut-être utiliser :**
 ```bash
-python3 main.py
+python3 app.py
 ```
 
-### Étape 3 : Attendre le Chargement
+#### Étape 3 : Attendre le Chargement
 
 ⏰ **Le premier lancement prend 30-60 secondes** car il charge le modèle d'IA.
 
 Vous verrez des messages comme :
 ```
-[2025-12-04 23:55:00] Démarrage de l'application de reconnaissance d'émotions
-[2025-12-04 23:55:01] Chargement du modèle et du détecteur de visage...
-[2025-12-04 23:55:05] Modèle chargé avec succès
-[2025-12-04 23:55:05] Webcam initialisée avec succès
-[2025-12-04 23:55:05] Démarrage de la détection d'émotions. Appuyez sur 'q' pour quitter.
+[2025-12-05 14:35:00] 🎀 Démarrage de l'application Flask de reconnaissance d'émotions 🎀
+[2025-12-05 14:35:01] Chargement du modèle depuis : fer2013_mini_XCEPTION.102-0.66.hdf5
+[2025-12-05 14:35:05] Modèle chargé avec succès
+[2025-12-05 14:35:05] Webcam initialisée avec succès
+[2025-12-05 14:35:05] ✨ Application prête! Ouvrez http://localhost:5000 dans votre navigateur ✨
 ```
 
-### Étape 4 : Une Fenêtre s'Ouvre !
+#### Étape 4 : Ouvrir dans le Navigateur
 
-Une fenêtre appelée **"Reconnaissance des Émotions"** devrait s'ouvrir avec :
+Ouvrez votre navigateur préféré (Chrome, Firefox, Safari, Edge) et allez à :
+
+```
+http://localhost:5000
+```
+
+Vous verrez une **interface girly, épurée et professionnelle** avec :
+- 🎨 Design moderne avec couleurs pastel roses
+- ✨ Animations douces et élégantes
+- 📱 Interface responsive (fonctionne sur mobile, tablette, desktop)
+- 🎥 Flux vidéo en temps réel de votre webcam
+- 💖 Affichage de l'émotion avec emoji et barre de confiance
+- 🌸 Effets visuels interactifs (bulles flottantes, sparkles)
+
+#### Étape 5 : Autoriser l'Accès à la Webcam
+
+Votre navigateur vous demandera l'autorisation d'accéder à votre webcam. Cliquez sur **"Autoriser"**.
+
+#### Étape 6 : Profiter de l'Application !
+
+L'application détecte automatiquement votre visage et affiche votre émotion en temps réel avec une interface magnifique ! 💕
+
+**Pour arrêter le serveur :** Appuyez sur `Ctrl + C` dans le terminal.
+
+---
+
+### Version Desktop (OpenCV)
+
+Si vous préférez la version traditionnelle avec fenêtre OpenCV :
+
+#### Étape 1 : Assurez-vous que l'Environnement Virtuel est Activé
+
+Vous devez voir `(venv)` au début de votre ligne de commande.
+
+#### Étape 2 : Lancer le Programme
+
+```bash
+python main.py
+```
+
+**Sur certains systèmes :**
+```bash
+python3 main.py
+```
+
+#### Étape 3 : Une Fenêtre s'Ouvre
+
+Une fenêtre appelée **"Reconnaissance des Émotions"** s'ouvrira avec :
 - L'image de votre webcam
 - Un rectangle rose autour de votre visage
-- Le nom de votre émotion en rose au-dessus de votre tête
+- Le nom de votre émotion en rose
 - Le pourcentage de confiance
+
+**Pour quitter :** Appuyez sur la touche `q`
 
 ## Comment Utiliser l'Application 🎯
 
@@ -297,13 +354,24 @@ pip install numpy==1.23.5
 
 ## Technologies Utilisées 🛠️
 
+### Backend
 | Technologie | Version | Rôle |
 |------------|---------|------|
 | **Python** | 3.9 | Langage de programmation principal |
+| **Flask** | 3.0.0 | Framework web pour l'interface moderne |
+| **Flask-CORS** | 4.0.0 | Gestion des requêtes cross-origin |
 | **OpenCV** | 4.8.0.74 | Détection de visages et traitement d'images |
 | **TensorFlow** | 2.12.0 | Intelligence artificielle pour la reconnaissance d'émotions |
-| **Pillow** | 11.3.0 | Rendu de texte avec police personnalisée |
+| **Pillow** | 11.0.0 | Traitement d'images |
 | **NumPy** | 1.23.5 | Calculs mathématiques |
+
+### Frontend (Version Web)
+| Technologie | Rôle |
+|------------|------|
+| **HTML5** | Structure de la page web |
+| **CSS3** | Design girly, épuré et professionnel |
+| **JavaScript** | Interactivité et mise à jour en temps réel |
+| **Google Fonts** | Typographies modernes (Poppins, Quicksand) |
 
 ### Le Modèle d'IA
 
@@ -317,10 +385,20 @@ Le modèle utilisé s'appelle **fer2013_mini_XCEPTION** :
 ```
 emotional_recognition/
 │
-├── main.py                              # Programme principal
+├── app.py                              # 🌟 Application Flask (Version Web)
+├── main.py                              # Programme desktop (Version OpenCV)
 ├── download_model.py                    # Script pour télécharger le modèle
 ├── requirements.txt                     # Liste des dépendances
 ├── .gitignore                          # Fichiers à ignorer par Git
+│
+├── templates/                          # 🎨 Templates HTML
+│   └── index.html                      # Interface web girly et professionnelle
+│
+├── static/                             # 📦 Fichiers statiques
+│   ├── css/
+│   │   └── style.css                   # Styles CSS modernes avec animations
+│   └── js/
+│       └── main.js                     # JavaScript pour l'interactivité
 │
 ├── fer2013_mini_XCEPTION.102-0.66.hdf5 # Modèle d'IA pré-entraîné
 ├── haarcascade_frontalface_default.xml # Détecteur de visages

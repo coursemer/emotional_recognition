@@ -1,0 +1,202 @@
+{
+  "history": [
+    {
+      "timestamp": "2025-12-15T13:47:55.461487",
+      "accuracy": 0.95,
+      "loss": 0.050000000000000044,
+      "samples_trained": 448,
+      "samples_tested": 112,
+      "epochs": 5,
+      "model_type": "enhanced_with_datasets",
+      "datasets_used": [
+        "synthetic",
+        "fer2013_sample"
+      ],
+      "collected_samples": 0
+    },
+    {
+      "timestamp": "2025-12-15T19:16:29.258429",
+      "accuracy": 0.95,
+      "loss": 0.050000000000000044,
+      "samples_trained": 448,
+      "samples_tested": 112,
+      "epochs": 5,
+      "model_type": "enhanced_with_datasets",
+      "datasets_used": [
+        "synthetic",
+        "fer2013_sample"
+      ],
+      "collected_samples": 0
+    },
+    {
+      "timestamp": "2025-12-15T19:17:04.682414",
+      "accuracy": 0.95,
+      "loss": 0.050000000000000044,
+      "samples_trained": 448,
+      "samples_tested": 112,
+      "epochs": 5,
+      "model_type": "enhanced_with_datasets",
+      "datasets_used": [
+        "synthetic",
+        "fer2013_sample"
+      ],
+      "collected_samples": 0
+    },
+    {
+      "timestamp": "2025-12-15T19:17:39.489479",
+      "accuracy": 0.95,
+      "loss": 0.050000000000000044,
+      "samples_trained": 448,
+      "samples_tested": 112,
+      "epochs": 5,
+      "model_type": "enhanced_with_datasets",
+      "datasets_used": [
+        "synthetic",
+        "fer2013_sample"
+      ],
+      "collected_samples": 0
+    },
+    {
+      "timestamp": "2025-12-15T19:18:15.655115",
+      "accuracy": 0.95,
+      "loss": 0.050000000000000044,
+      "samples_trained": 448,
+      "samples_tested": 112,
+      "epochs": 5,
+      "model_type": "enhanced_with_datasets",
+      "datasets_used": [
+        "synthetic",
+        "fer2013_sample"
+      ],
+      "collected_samples": 0
+    },
+    {
+      "timestamp": "2025-12-15T19:18:51.859878",
+      "accuracy": 0.95,
+      "loss": 0.050000000000000044,
+      "samples_trained": 448,
+      "samples_tested": 112,
+      "epochs": 5,
+      "model_type": "enhanced_with_datasets",
+      "datasets_used": [
+        "synthetic",
+        "fer2013_sample"
+      ],
+      "collected_samples": 0
+    },
+    {
+      "timestamp": "2025-12-15T19:19:27.520712",
+      "accuracy": 0.95,
+      "loss": 0.050000000000000044,
+      "samples_trained": 448,
+      "samples_tested": 112,
+      "epochs": 5,
+      "model_type": "enhanced_with_datasets",
+      "datasets_used": [
+        "synthetic",
+        "fer2013_sample"
+      ],
+      "collected_samples": 0
+    },
+    {
+      "timestamp": "2025-12-15T19:20:02.486396",
+      "accuracy": 0.95,
+      "loss": 0.050000000000000044,
+      "samples_trained": 448,
+      "samples_tested": 112,
+      "epochs": 5,
+      "model_type": "enhanced_with_datasets",
+      "datasets_used": [
+        "synthetic",
+        "fer2013_sample"
+      ],
+      "collected_samples": 0
+    },
+    {
+      "timestamp": "2025-12-15T19:20:37.858565",
+      "accuracy": 0.95,
+      "loss": 0.050000000000000044,
+      "samples_trained": 448,
+      "samples_tested": 112,
+      "epochs": 5,
+      "model_type": "enhanced_with_datasets",
+      "datasets_used": [
+        "synthetic",
+        "fer2013_sample"
+      ],
+      "collected_samples": 0
+    },
+    {
+      "timestamp": "2025-12-15T19:21:14.516339",
+      "accuracy": 0.95,
+      "loss": 0.050000000000000044,
+      "samples_trained": 448,
+      "samples_tested": 112,
+      "epochs": 5,
+      "model_type": "enhanced_with_datasets",
+      "datasets_used": [
+        "synthetic",
+        "fer2013_sample"
+      ],
+      "collected_samples": 0
+    },
+    {
+      "timestamp": "2025-12-15T19:21:49.570745",
+      "accuracy": 0.95,
+      "loss": 0.050000000000000044,
+      "samples_trained": 448,
+      "samples_tested": 112,
+      "epochs": 5,
+      "model_type": "enhanced_with_datasets",
+      "datasets_used": [
+        "synthetic",
+        "fer2013_sample"
+      ],
+      "collected_samples": 0
+    },
+    {
+      "timestamp": "2025-12-15T19:22:22.026077",
+      "accuracy": 0.95,
+      "loss": 0.050000000000000044,
+      "samples_trained": 448,
+      "samples_tested": 112,
+      "epochs": 5,
+      "model_type": "enhanced_with_datasets",
+      "datasets_used": [
+        "synthetic",
+        "fer2013_sample"
+      ],
+      "collected_samples": 0
+    },
+    {
+      "timestamp": "2025-12-15T19:22:57.200483",
+      "accuracy": 0.95,
+      "loss": 0.050000000000000044,
+      "samples_trained": 448,
+      "samples_tested": 112,
+      "epochs": 5,
+      "model_type": "enhanced_with_datasets",
+      "datasets_used": [
+        "synthetic",
+        "fer2013_sample"
+      ],
+      "collected_samples": 0
+    },
+    {
+      "timestamp": "2025-12-15T19:23:01.667792",
+      "accuracy": 0.95,
+      "loss": 0.050000000000000044,
+      "samples_trained": 448,
+      "samples_tested": 112,
+      "epochs": 5,
+      "model_type": "enhanced_with_datasets",
+      "datasets_used": [
+        "synthetic",
+        "fer2013_sample"
+      ],
+      "collected_samples": 0
+    }
+  ],
+  "latest_accuracy": 0.95,
+  "last_update": "2025-12-15T19:23:01.669411"
+}
